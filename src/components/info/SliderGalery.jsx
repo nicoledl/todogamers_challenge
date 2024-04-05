@@ -21,7 +21,7 @@ export default function SliderGalery() {
             <Box key={id}>
               <Image
                   boxSize='100px'
-                  width={{ base: 130, sm: 160, md: 180, lg:200}}
+                  width={{ base: 130, sm: 160, md: 180}}
                   objectFit='cover'
                   borderRadius={10}
                   src='https://d33byq9npfy6u9.cloudfront.net/2/2016/11/003-DSC_4012print.jpg'
