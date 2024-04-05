@@ -1,0 +1,48 @@
+body{
+    background-color: #010316;
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+
+img:focus-visible, svg:focus-visible, a:focus-visible{
+    outline: none;
+    background: none;
+}
+
+.button_bg{
+    background: linear-gradient(-45deg, #373fe7, #e21bd6);
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+}
+
+.button_bg:hover, .button_border:hover{
+    color: #000000;
+}
+
+.button_border{
+    border: 2px solid transparent; 
+    border-image: linear-gradient(-45deg, #373fe7, #e21bd6);
+    border-image-slice: 1;
+}
+
+/* atributos del componente slider de la librería slick */
+.slick-list{
+    overflow: hidden;
+    height: max-content !important;
+}
+/* atributos del componente slider de la librería slick */
+.slick-track{
+    display: flex;
+}   
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
