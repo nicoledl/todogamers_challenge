@@ -16,7 +16,7 @@ import { usePathname } from 'next/navigation'
 export default function BottomNav() {
   const [onClick, setOnClick] = useState(2)
   const pathname = usePathname()
-
+  
   const handleClick = (id) => {
     setOnClick(id)
   }
@@ -32,17 +32,17 @@ export default function BottomNav() {
   return (
     <Box bg='#040210' className={style.bottom_navbar} p={3}>
       <Grid templateColumns='repeat(3, 1fr)' gap={6}>
-        <GridItem color={onClick == 1 && '#373fe7'} id={1} w='100%' h='10' justifyItems='center' display='grid' alignContent='center' onClick={() => handleClick(1)}> 
+        <GridItem className={style.bottom_navbar_item} color={onClick == 1 && '#373fe7'} id={1} onClick={() => handleClick(1)}> 
           <CalendarIcon w={5} h={5} />
           <Text fontSize='xs'>Calendario</Text>
         </GridItem>
-        <GridItem color={onClick == 2 && '#373fe7'} w='100%' h='10' justifyItems='center' display='grid' alignContent='center' onClick={() => handleClick(2)}>
+        <GridItem className={style.bottom_navbar_item} color={onClick == 2 && '#373fe7'} onClick={() => handleClick(2)}>
           <Link href="/">
             <HiHome size={27}/>
             <Text fontSize='xs'>Inicio</Text>
           </Link>
         </GridItem>
-        <GridItem color={onClick == 3 && '#373fe7'} w='100%' h='10' justifyItems='center' display='grid' alignContent='center' onClick={() => handleClick(3)}>
+        <GridItem className={style.bottom_navbar_item} color={onClick == 3 && '#373fe7'} onClick={() => handleClick(3)}>
           <ChatIcon w={5} h={5} />
           <Text fontSize='xs'>Chat</Text>
         </GridItem>

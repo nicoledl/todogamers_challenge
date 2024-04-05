@@ -10,7 +10,7 @@ import { HiOutlineLocationMarker, HiPhone } from "react-icons/hi";
 export default function SliderCards({title}) {
   const [content, setContent] = useState([])
   
-  var settings = {
+  const settings = {
     dots:false,
     adaptiveHeight:true,
     infinite:false,
