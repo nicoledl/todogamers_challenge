@@ -4,7 +4,7 @@ import { Box, Image } from "@chakra-ui/react";
 import Slider from "react-slick";
 
 export default function SliderGalery() {
-  var settings = {
+  const settings = {
     dots:false,
     adaptiveHeight:true,
     infinite:false,
