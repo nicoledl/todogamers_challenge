@@ -73,7 +73,7 @@ function Card({info}){
           alt='Dan Abramov' /> 
       </GridItem>
       <GridItem colSpan={2} pl={1} alignItems='center' alignContent='space-evenly' display='grid'>
-        <Text display='flex' fontSize={{base:'sm', sm:'md', md:'lg'}} gap={2}><HiOutlineLocationMarker size={20} />{address_1.length > 16 ? address_1.substring(0, 16) + '...' : address_1}</Text>
+        <Text display='flex' fontSize={{base:'sm', sm:'md', md:'lg'}} gap={2}><HiOutlineLocationMarker size={20} />{address_1?.length > 16 ? address_1.substring(0, 16) + '...' : address_1}</Text>
         <Text display='flex' fontSize='sm' gap={2}><HiPhone size={20} />{phone}</Text>
       </GridItem>
       <GridItem colSpan={3} display='flex' justifyContent='center' alignItems='center'>

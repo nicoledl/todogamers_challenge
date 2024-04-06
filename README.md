@@ -5,7 +5,8 @@
 https://github.com/nicoledl/todogamers_challenge
 
 2- Desde tu terminal:
-Abrir una terminal que se ubique dentro de la carpeta 'todogamers_challenge' y corrés el comando "npm run dev"
+Abrir una terminal que se ubique dentro de la carpeta 'todogamers_challenge' y ejecuta el comando 'npm i'. 
+Despés de terminar de instalar las dependencias ejecuta el comando "npm run dev".
 
 3- Navegador:
 Abrir un navegador y en la barra de direcciónes escribes el 'localhost:3000', o tu local host predeterminado.
